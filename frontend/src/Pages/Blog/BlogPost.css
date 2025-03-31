@@ -1,0 +1,140 @@
+/* Base Styles */
+.blog-post-container {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Post Header */
+  .post-header {
+    margin-bottom: 3rem;
+  }
+  
+  .post-poster {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .post-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
+  }
+  
+  .post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+    color: #b0b0b0;
+  }
+  
+  .post-author {
+    font-weight: 500;
+  }
+  
+  .post-date {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  /* Post Content */
+  .post-content {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+  }
+  
+  /* Back Button */
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+  }
+  
+  .back-button:before {
+    content: '←';
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #2d2d2d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-button:hover:before {
+    transform: translateX(-5px);
+  }
+  
+  /* Loading State */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+  }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(187, 134, 252, 0.2);
+    border-top-color: #bb86fc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  .loading-text {
+    color: #888;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blog-post-container {
+      padding: 1.5rem;
+    }
+    
+    .post-poster {
+      height: 250px;
+    }
+    
+    .post-title {
+      font-size: 2rem;
+    }
+    
+    .post-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
