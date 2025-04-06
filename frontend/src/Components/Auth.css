@@ -1,0 +1,95 @@
+/* Auth.css */
+
+/* Container styling */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  /* Tab buttons styling */
+  .auth-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .auth-tab-btn {
+    flex: 1;
+    padding: 12px 0;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-tab-btn:hover {
+    color: #4285F4;
+  }
+  
+  .auth-tab-btn.active {
+    color: #4285F4;
+    border-bottom: 3px solid #4285F4;
+  }
+  
+  /* Form styling */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input {
+    padding: 14px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+  }
+  
+  .auth-form input:focus {
+    outline: none;
+    border-color: #4285F4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.1);
+  }
+  
+  .auth-form input::placeholder {
+    color: #9e9e9e;
+  }
+  
+  .auth-form button {
+    padding: 14px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    background-color: #3367d6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .auth-container {
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    
+    .auth-form input, 
+    .auth-form button {
+      padding: 12px;
+    }
+  }
